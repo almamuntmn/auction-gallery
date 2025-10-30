@@ -39,7 +39,7 @@ const Auctions = ({ auctionsPromise }) => {
                         <div>
                             {/* head */}
                             <div>
-                                <div className='text-black flex justify-between border-b border-gray-300 pb-4 mx-12'>
+                                <div className='text-black flex justify-between border-b border-gray-300 pb-4 mx-12 mb-4'>
                                     <h2>Items</h2>
                                     <ul className='flex gap-27'>
                                         <li>Current Bid</li>

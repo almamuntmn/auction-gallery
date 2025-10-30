@@ -19,7 +19,7 @@ const Auction = ({ auction, handleFavorite }) => {
                     <div>
                         {/* row */}
                         <div className='text-black flex justify-between items-center mx-4 border-b border-gray-300 pb-4 mb-4'>
-                            <div>
+                            <div className='flex items-center gap-5'>
                                 <div><img className='w-24 h-24 rounded-xl' src={image} alt="" /></div>
                                 <div className='text-lg font-normal'>{title}</div>
                             </div>
