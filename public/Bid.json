@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leather Camera",
+    "description": "A rare vintage leather camera from the 1950s in excellent condition.",
+    "currentBidPrice": 120.5,
+    "timeLeft": "2h 45m",
+    "bidsCount": 8,
+    "image": "../assets/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "Antique Pocket Watch",
+    "description": "A handcrafted gold pocket watch with elegant engraving, circa 1920.",
+    "currentBidPrice": 250.0,
+    "timeLeft": "1h 10m",
+    "bidsCount": 15,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+  },
+  {
+    "id": 3,
+    "title": "Retro Vinyl Record Set",
+    "description": "Classic 70s rock vinyl collection in pristine condition, 12 albums total.",
+    "currentBidPrice": 80.0,
+    "timeLeft": "5h 30m",
+    "bidsCount": 22,
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4"
+  },
+  {
+    "id": 4,
+    "title": "Signed Football Jersey",
+    "description": "Authentic jersey signed by a legendary player, includes certificate of authenticity.",
+    "currentBidPrice": 340.75,
+    "timeLeft": "30m",
+    "bidsCount": 11,
+    "image": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a"
+  },
+  {
+    "id": 5,
+    "title": "Abstract Art Painting",
+    "description": "Original abstract acrylic painting on canvas, size 24x36 inches.",
+    "currentBidPrice": 600.0,
+    "timeLeft": "8h 10m",
+    "bidsCount": 18,
+    "image": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92"
+  },
+  {
+    "id": 6,
+    "title": "Modern Gaming Headset",
+    "description": "High-quality wireless gaming headset with surround sound and noise cancellation.",
+    "currentBidPrice": 95.99,
+    "timeLeft": "3h 55m",
+    "bidsCount": 27,
+    "image": "../assets/Bid7-min.png"
+  }
+]

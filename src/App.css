@@ -1,0 +1,11 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+@import "tailwindcss";
+@plugin "daisyui";
