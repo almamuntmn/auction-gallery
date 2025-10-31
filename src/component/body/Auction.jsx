@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
-const Auction = ({ auction, handleFavorite }) => {
+const Auction = ({ auction, handleFavorite, handleRemoveAuctions }) => {
 
     const { title, currentBidPrice, timeLeft, image } = auction;
 
     const [isFav, setIsFav]= useState(false);
+        
     const toggleFav=()=>{
+
         if(!isFav){
             handleFavorite(auction, currentBidPrice);
         }
+        console.log(isFav);
         setIsFav(!isFav);
     }
+
+
     return (
         <div className='mx-auto'>
             <div className="overflow-x-auto rounded-box border border-base-content/5">

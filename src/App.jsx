@@ -9,12 +9,14 @@ function App() {
 
   const auctionsPromise = fetch('/Bid.json').then(res => res.json())
 
+  
+
 
   return (
     <>
       <Navbar />
       <Hero />
-      <Suspense fallback={<div><h1>Loading...</h1></div>}>
+      <Suspense fallback={<div className='h-screen flex flex-col justify-center items-center'><h1 className='mb-5'>Auction Data Loading</h1><span className="loading loading-ring loading-xl"></span></div>}>
         <Auctions auctionsPromise={auctionsPromise} />
       </Suspense>
       <Footer />

@@ -3,8 +3,9 @@ import { GrClose } from "react-icons/gr";
 
 const Favorite = ({ favoriteAuction, handleRemoveAuctions }) => {
 
+    
+
     const { title, currentBidPrice, image, bidsCount, id } = favoriteAuction;
-    console.log('Favorite component rendered with auctionId:', favoriteAuction, handleRemoveAuctions);
     return (
         <div className='flex justify-between items-center'>
             <div className='flex mb-3 items-center gap-4 mt-3'>

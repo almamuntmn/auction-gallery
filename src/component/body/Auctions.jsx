@@ -5,6 +5,7 @@ import Favorite from '../favotite/Favorite';
 
 const Auctions = ({ auctionsPromise }) => {
 
+
     const auctions = use(auctionsPromise)
 
     const [favoriteAuctions, setFavoriteAuctions] = useState([]);
@@ -12,6 +13,7 @@ const Auctions = ({ auctionsPromise }) => {
 
     const handleFavorite = (auctions, currentBidPrice) => {
         const newFavoriteAuctions = ([...favoriteAuctions, auctions])
+        if (favoriteAuctions.find(a => a.id === auctions.id)) return
         setFavoriteAuctions(newFavoriteAuctions)
         const newPrice = (favBidPrice + currentBidPrice)
         setFavBidPrice(newPrice);
@@ -19,6 +21,7 @@ const Auctions = ({ auctionsPromise }) => {
 
     const handleRemoveAuctions = (id) => {
         const auctionToRemove = favoriteAuctions.find((a) => a.id === id);
+        console.log(auctionToRemove);
         if (!auctionToRemove) return;
 
         const remainingAuctions = favoriteAuctions.filter((a) => a.id !== id);
@@ -50,7 +53,7 @@ const Auctions = ({ auctionsPromise }) => {
                             </div>
                         </div>
                         {
-                            auctions.map(auction => <Auction handleFavorite={handleFavorite} key={auction.id} auction={auction} />)
+                            auctions.map(auction => <Auction handleFavorite={handleFavorite} handleRemoveAuctions={handleRemoveAuctions} key={auction.id} auction={auction} />)
                         }
                     </div>
                     <div className='w-[30%] h-fit bg-white rounded-lg p-5'>
